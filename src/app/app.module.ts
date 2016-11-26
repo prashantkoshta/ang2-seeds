@@ -1,18 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { StartComponent } from './com/common/homepage/start.component';
+import { AboutUsComponent } from './com/common/homepage/aboutus.component';
+import { SharedModule } from './com/shared/shared.module';
+import {routing} from "./app.route";
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StartComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    HttpModule,
+    routing,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

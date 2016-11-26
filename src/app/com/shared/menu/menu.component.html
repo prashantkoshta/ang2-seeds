@@ -1,0 +1,6 @@
+ <ul class='nav navbar-nav' *ngFor="let item of mainMenuItem">
+    <li><a [routerLink]="[item.link]">{{item.label}}</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right" *ngFor="let sitem of settingMenuItem">
+   <li><a [routerLink]="[sitem.link]">{{sitem.label}}</a></li>
+</ul>
