@@ -8,6 +8,7 @@ import { StartComponent } from './com/common/homepage/start.component';
 import { AboutUsComponent } from './com/common/homepage/aboutus.component';
 import { SharedModule } from './com/shared/shared.module';
 import {routing} from "./app.route";
+import {AuthService} from "./com/core/services/auth.service";
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import {routing} from "./app.route";
     routing,
     SharedModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

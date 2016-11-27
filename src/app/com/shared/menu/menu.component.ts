@@ -13,8 +13,7 @@ export class MenuComponent implements OnInit {
     ];
 
     settingMenuItem:Array<any> =[
-        {label:"Login", link:"/login"},
-        {label:"SignUp", link:"/logout"}
+        {label:"Login", link:"/login"}
     ]
 
     constructor() { }
